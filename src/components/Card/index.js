@@ -9,9 +9,12 @@ import {
   Content,
   CardContent,
   CardHeader,
+  CardHeaderText,
   CardFooter,
   Title,
+  Value,
   Description,
+  Limit,
   Annotation,
 } from './styles';
 
@@ -80,16 +83,21 @@ export default function Card() {
           }}
         >
           <CardHeader>
-            <Icon name="attach-money" size={28} color="#666" />
-            <Icon name="visibility-off" size={28} color="#666" />
+            <Icon name="credit-card" size={24} color="#666" />
+            <CardHeaderText>Cartão de Crédito</CardHeaderText>
           </CardHeader>
           <CardContent>
-            <Title>Saldo Disponível</Title>
-            <Description>R$201.322,57</Description>
+            <Title>FATURA ATUAL</Title>
+            <Value>R$1.322,57</Value>
+            <Description>
+              Limite disponível: <Limit>R$ 4.578,00</Limit>
+            </Description>
           </CardContent>
           <CardFooter>
+            <Icon name="shopping-cart" size={24} color="#666" />
             <Annotation>
-              Transferência de R$250,00 recebida de Julio Murelli hoje as 18:00h
+              Compra mais recente em Lojas Americanas no valor de R$ 199,00
+              ontem
             </Annotation>
           </CardFooter>
         </Content>
